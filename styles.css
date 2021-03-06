@@ -50,8 +50,7 @@ body {
   flex: 1;
   text-align: left;
   background-color: #333;
-  padding: 25px 30px;
-  padding-bottom: 0;
+  padding: 0 30px;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -62,27 +61,36 @@ body {
 }
 
 .container > div > div > span:first-child {
-  flex-basis: 20px;
+  /* flex-basis: 20px; */
+  flex: 0 0 20px;
   text-align: center;
   padding-right: 10px;
 }
 
 a {
-  color: inherit;
+  color: lightblue;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #fff;
+}
+
+hr {
+  margin: 20px 0;
+  border-color: #555;
+  border-width: 0.5px;
 }
 
 h3 {
   font-size: 25px;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 -30px;
+  padding: 10px 30px;
+  margin-bottom: 25px;
   font-weight: 100;
   font-family: "Nunito", sans-serif;
+  /* border-bottom: solid 1px #555; */
+  background-color: #447b28;
 }
 
 i.fa {
@@ -95,7 +103,7 @@ i.fa {
   margin: 0 -30px;
   padding-bottom: 0;
   margin-top: 10px;
-  border-top: dashed 2px #447b28;
+  border-bottom: solid 2px #447b28;
 }
 
 #imgFancy {
