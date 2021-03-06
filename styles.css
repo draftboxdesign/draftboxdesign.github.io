@@ -1,11 +1,20 @@
+html,
 body {
-  margin: 0;
-  padding: 10px;
-  text-align: center;
   background-color: #262525;
+}
+
+body {
+  /* height: 100vh; */
+  margin: 0;
+  padding: 10px 20px;
+  text-align: center;
   color: #eee;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+  /* background-image: url("bg-print.jpg");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: contain; */
 }
 
 .container {
@@ -14,12 +23,31 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 30px 0;
-  align-items: center;
+  opacity: 1;
+  margin-top: 0;
+  animation: opacityAnim 6s;
 }
 
-@media screen and (max-width: 760px) {
-  .container {
-    flex-flow: column;
+.container > div:first-child {
+  margin-right: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@keyframes opacityAnim {
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+
+  80% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
   }
 }
 
@@ -28,7 +56,11 @@ body {
   text-align: left;
   background-color: #333;
   padding: 25px 30px;
+  padding-bottom: 0;
   border-radius: 5px;
+  overflow: hidden;
+  /* border: dashed 2px #777; */
+  /* box-shadow: 0 2px 5px 0 #444; */
 }
 
 .container > div > div {
@@ -43,12 +75,113 @@ body {
 }
 
 a {
-  color: #fff;
+  color: inherit;
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
 h3 {
-  font-size: 20px;
+  font-size: 25px;
   margin: 0;
   margin-bottom: 20px;
+  font-weight: 100;
+}
+
+i.fa {
+  color: #aaa;
+}
+
+#imgContainer {
+  position: relative;
+  overflow: hidden;
+  margin: 0 -30px;
+  padding-bottom: 0;
+  margin-top: 10px;
+  border-top: dashed 2px #777;
+}
+
+#imgFancy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+#imgFancy:hover {
+  transform: scale(1.25);
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    flex-flow: column;
+  }
+
+  .container > div {
+    flex: 1;
+  }
+}
+
+#logoContainer {
+  z-index: 10;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#logoLayer1 {
+  border: solid 5px #ffffff;
+  padding: 25px;
+  background-color: #262525;
+  display: inline-block;
+
+  transform: scale(1) rotateZ(0deg);
+  animation: pulse 5s;
+  opacity: 0;
+}
+
+#logoLayer2 {
+  width: 50px;
+  height: 50px;
+  background-color: #447b28;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(0.5) rotateZ(0);
+  }
+
+  20% {
+    transform: scale(1) rotateZ(180deg);
+    opacity: 1;
+  }
+
+  40% {
+    transform: scale(0.5) rotateZ(360deg);
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(1) rotateZ(540deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: scale(0.5) rotateZ(720deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(4) rotateZ(720deg);
+    opacity: 0;
+  }
 }
