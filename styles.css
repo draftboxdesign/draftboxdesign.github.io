@@ -4,17 +4,12 @@ body {
 }
 
 body {
-  /* height: 100vh; */
   margin: 0;
   padding: 10px 20px;
   text-align: center;
   color: #eee;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  /* background-image: url("bg-print.jpg");
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: contain; */
 }
 
 .container {
@@ -25,7 +20,7 @@ body {
   padding: 30px 0;
   opacity: 0;
   margin-top: 0;
-  animation: opacityAnim 7s forwards;
+  animation: opacityAnim 6s forwards;
 }
 
 .container > div:first-child {
@@ -59,8 +54,6 @@ body {
   padding-bottom: 0;
   border-radius: 5px;
   overflow: hidden;
-  /* border: dashed 2px #777; */
-  /* box-shadow: 0 2px 5px 0 #444; */
 }
 
 .container > div > div {
@@ -89,6 +82,7 @@ h3 {
   margin: 0;
   margin-bottom: 20px;
   font-weight: 100;
+  font-family: "Nunito", sans-serif;
 }
 
 i.fa {
@@ -101,7 +95,7 @@ i.fa {
   margin: 0 -30px;
   padding-bottom: 0;
   margin-top: 10px;
-  border-top: dashed 2px #777;
+  border-top: dashed 2px #447b28;
 }
 
 #imgFancy {
@@ -192,7 +186,7 @@ i.fa {
   height: 200px;
   pointer-events: none;
   opacity: 1;
-  animation: logoAnim 6s forwards;
+  animation: logoAnim 5s forwards;
 }
 
 @keyframes logoAnim {
@@ -220,11 +214,40 @@ i.fa {
   margin: auto;
   position: relative;
 }
+
 #svgLogoAnim img {
   height: 200px;
   position: absolute;
   left: 0;
   top: 0;
+}
+
+#svgLogoAnim section {
+  position: absolute;
+  left: 20px;
+  bottom: -25px;
+  opacity: 0;
+  color: #555;
+  animation: logoLabel 3s forwards;
+  font-family: "Nunito", sans-serif;
+}
+
+@keyframes logoLabel {
+  0% {
+    opacity: 0;
+    color: #555;
+    left: 20px;
+  }
+  50% {
+    opacity: 0;
+    color: #555;
+    left: 20px;
+  }
+  100% {
+    opacity: 1;
+    color: #fff;
+    left: 0;
+  }
 }
 
 img#box1,
