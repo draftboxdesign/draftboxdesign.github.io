@@ -23,9 +23,9 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 30px 0;
-  opacity: 1;
+  opacity: 0;
   margin-top: 0;
-  animation: opacityAnim 6s;
+  animation: opacityAnim 7s forwards;
 }
 
 .container > div:first-child {
@@ -130,22 +130,20 @@ i.fa {
 
 #logoContainer {
   z-index: 10;
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  left: -31px;
+  bottom: -33px;
   text-align: center;
 }
 
 #logoLayer1 {
   border: solid 5px #ffffff;
   padding: 25px;
-  background-color: #262525;
   display: inline-block;
 
-  transform: scale(1) rotateZ(0deg);
-  animation: pulse 5s;
-  opacity: 0;
+  transform: scale(0.7) rotateZ(0deg);
+  animation: pulse 3s forwards;
+  opacity: 1;
 }
 
 #logoLayer2 {
@@ -161,7 +159,7 @@ i.fa {
   }
 
   20% {
-    transform: scale(1) rotateZ(180deg);
+    transform: scale(0.7) rotateZ(180deg);
     opacity: 1;
   }
 
@@ -171,7 +169,7 @@ i.fa {
   }
 
   60% {
-    transform: scale(1) rotateZ(540deg);
+    transform: scale(0.7) rotateZ(540deg);
     opacity: 1;
   }
 
@@ -181,7 +179,121 @@ i.fa {
   }
 
   100% {
-    transform: scale(4) rotateZ(720deg);
+    transform: scale(2) rotateZ(720deg);
     opacity: 0;
+  }
+}
+
+#svgLogoAnim {
+  position: fixed;
+  width: 100%;
+  top: 20%;
+  height: 200px;
+  pointer-events: none;
+  opacity: 1;
+  animation: logoAnim 6s forwards;
+}
+
+@keyframes logoAnim {
+  0% {
+    opacity: 1;
+    top: 20%;
+  }
+  60% {
+    top: 10%;
+    opacity: 1;
+  }
+  90% {
+    top: 10%;
+    opacity: 1;
+  }
+  100% {
+    top: 10%;
+    opacity: 0;
+  }
+}
+
+#svgLogoAnim > div#svgImgs {
+  width: 140px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+}
+#svgLogoAnim img {
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+img#box1,
+img#box2 {
+  animation: imgBox 3s forwards;
+  opacity: 0;
+}
+
+@keyframes imgBox {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+img#box3 {
+  clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  animation: imgBox3 2s forwards;
+  opacity: 0;
+}
+
+@keyframes imgBox3 {
+  0% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+  }
+  100% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    opacity: 1;
+  }
+}
+
+img#petal1 {
+  animation: imgPetal1 2s forwards;
+  opacity: 0;
+  margin-left: -13px;
+}
+
+img#petal2 {
+  animation: imgPetal1 3s forwards;
+  opacity: 0;
+  margin-left: -13px;
+}
+
+img#petal3 {
+  animation: imgPetal1 4s forwards;
+  opacity: 0;
+  margin-left: -13px;
+}
+
+@keyframes imgPetal1 {
+  0% {
+    opacity: 0;
+    margin-left: -13px;
+  }
+  33.3% {
+    opacity: 0;
+    margin-left: -13px;
+  }
+  66.6% {
+    opacity: 0;
+    margin-left: -13px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
   }
 }
