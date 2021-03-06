@@ -187,7 +187,8 @@ i.fa {
 #svgLogoAnim {
   position: fixed;
   width: 100%;
-  top: 20%;
+  top: 30%;
+  left: 30px;
   height: 200px;
   pointer-events: none;
   opacity: 1;
@@ -197,18 +198,18 @@ i.fa {
 @keyframes logoAnim {
   0% {
     opacity: 1;
-    top: 20%;
+    top: 30%;
   }
   60% {
-    top: 10%;
+    top: 25%;
     opacity: 1;
   }
   90% {
-    top: 10%;
+    top: 25%;
     opacity: 1;
   }
   100% {
-    top: 10%;
+    top: 25%;
     opacity: 0;
   }
 }
