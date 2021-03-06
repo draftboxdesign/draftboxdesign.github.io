@@ -131,8 +131,8 @@ i.fa {
 }
 
 #logoLayer1 {
-  border: solid 5px #ffffff;
-  padding: 25px;
+  border: solid 8px #ffffff;
+  padding: 22px;
   display: inline-block;
 
   transform: scale(0.7) rotateZ(0deg);
