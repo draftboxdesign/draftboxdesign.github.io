@@ -5,7 +5,7 @@ body {
 
 body {
   margin: 0;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   text-align: center;
   color: #eee;
   font-family: Arial, Helvetica, sans-serif;
@@ -36,12 +36,10 @@ body {
     opacity: 0;
     margin-top: -20px;
   }
-
   80% {
     opacity: 0;
     margin-top: -20px;
   }
-
   100% {
     opacity: 1;
     margin-top: 0;
@@ -156,7 +154,6 @@ i.fa {
   border: solid 8px #ffffff;
   padding: 22px;
   display: inline-block;
-
   transform: scale(0.7) rotateZ(0deg);
   animation: pulse 2s forwards;
   opacity: 1;
@@ -173,22 +170,18 @@ i.fa {
     opacity: 1;
     transform: scale(0.7) rotateZ(0);
   }
-
   33% {
     transform: scale(0.5) rotateZ(180deg);
     opacity: 1;
   }
-
   66% {
     transform: scale(0.7) rotateZ(360deg);
     opacity: 1;
   }
-
   100% {
     transform: scale(0.3) rotateZ(540deg);
     opacity: 0;
   }
-
   /* 80% {
     transform: scale(0.5) rotateZ(720deg);
     opacity: 1;
@@ -290,7 +283,8 @@ img#box2 {
 }
 
 img#box3 {
-  clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+          clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
   animation: imgBox3 3s forwards;
   /* //animation-delay: 1s; */
   /* opacity: 0; */
@@ -298,15 +292,18 @@ img#box3 {
 
 @keyframes imgBox3 {
   0% {
-    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
     /* opacity: 0; */
   }
   60% {
-    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
     /* opacity: 0; */
   }
   100% {
-    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
     /* opacity: 1; */
   }
 }
@@ -350,3 +347,5 @@ img#petal3 {
     margin-left: 0;
   }
 }
+
+/*# sourceMappingURL=styles.css.map*/
