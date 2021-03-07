@@ -5,11 +5,30 @@ body {
 
 body {
   margin: 0;
-  /* padding: 10px 20px; */
-  text-align: center;
   color: #eee;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+}
+
+.header {
+  background-color: #447b28;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: #eee;
+}
+
+.header > div {
+  padding: 10px 20px;
+  padding-right: 5px;
+}
+
+.header > div img {
+  height: 40px;
+}
+
+.header > div:last-child {
+  padding: 10px;
 }
 
 .container {
@@ -17,18 +36,38 @@ body {
   flex-flow: row;
   max-width: 800px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 40px 0;
   opacity: 0;
   margin-top: 0;
   animation: opacityAnim 7s forwards;
 }
 
 .container > div:first-child {
-  margin-right: 10px;
-  border-radius: 5px;
+  text-align: center;
   overflow: hidden;
   padding: 20px 30px;
+  padding-right: 40px;
   padding-bottom: 40px;
+}
+
+.container > div:last-child {
+  flex: 1;
+  text-align: left;
+  background-color: #333;
+  padding: 0 30px;
+  overflow: hidden;
+  border-bottom: solid 2px #447b28;
+}
+
+.container > div > div {
+  padding-bottom: 15px;
+  display: flex;
+}
+
+.container > div > div > span:first-child {
+  flex: 0 0 20px;
+  text-align: center;
+  padding-right: 10px;
 }
 
 @keyframes opacityAnim {
@@ -44,27 +83,6 @@ body {
     opacity: 1;
     margin-top: 0;
   }
-}
-
-.container > div:last-child {
-  flex: 1;
-  text-align: left;
-  background-color: #333;
-  padding: 0 30px;
-  /* border-radius: 5px; */
-  overflow: hidden;
-}
-
-.container > div > div {
-  padding-bottom: 15px;
-  display: flex;
-}
-
-.container > div > div > span:first-child {
-  /* flex-basis: 20px; */
-  flex: 0 0 20px;
-  text-align: center;
-  padding-right: 10px;
 }
 
 a {
@@ -83,18 +101,19 @@ hr {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 23px;
   margin: 0 -30px;
-  padding: 10px 30px;
+  padding: 15px 30px;
   margin-bottom: 25px;
   font-weight: 100;
   font-family: "Nunito", sans-serif;
-  /* border-bottom: solid 1px #555; */
   background-color: #447b28;
+  display: flex;
+  align-items: center;
 }
 
 i.fa {
-  color: #aaa;
+  color: #bbb;
 }
 
 #imgContainer {
@@ -103,10 +122,9 @@ i.fa {
   margin: 0 -30px;
   padding-bottom: 0;
   margin-top: 10px;
-  border-bottom: solid 2px #447b28;
 }
 
-#imgFancy {
+#imgContainer #imgFancy {
   position: absolute;
   left: 0;
   right: 0;
@@ -116,7 +134,7 @@ i.fa {
   transition: all 0.3s;
 }
 
-#imgFancy:hover {
+#imgContainer #imgFancy:hover {
   transform: scale(1.25);
 }
 
@@ -150,7 +168,7 @@ i.fa {
   text-align: center;
 }
 
-#logoLayer1 {
+#logoContainer #logoLayer1 {
   border: solid 8px #ffffff;
   padding: 22px;
   display: inline-block;
@@ -159,7 +177,7 @@ i.fa {
   opacity: 1;
 }
 
-#logoLayer2 {
+#logoContainer #logoLayer2 {
   width: 50px;
   height: 50px;
   background-color: #447b28;
@@ -182,15 +200,6 @@ i.fa {
     transform: scale(0.3) rotateZ(540deg);
     opacity: 0;
   }
-  /* 80% {
-    transform: scale(0.5) rotateZ(720deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(2) rotateZ(720deg);
-    opacity: 0;
-  } */
 }
 
 #svgLogoAnim {
@@ -286,25 +295,20 @@ img#box3 {
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
           clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
   animation: imgBox3 3s forwards;
-  /* //animation-delay: 1s; */
-  /* opacity: 0; */
 }
 
 @keyframes imgBox3 {
   0% {
     -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-    /* opacity: 0; */
   }
   60% {
     -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-    /* opacity: 0; */
   }
   100% {
     -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
             clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
-    /* opacity: 1; */
   }
 }
 
