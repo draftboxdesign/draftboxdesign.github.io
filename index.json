@@ -1,74 +1,92 @@
 [
     {
         "filename": "house6.jpg",
-        "description": ""
+        "description": "",
+        "type": "r"
     },
     {
         "filename": "house1.jpg",
-        "description": ""
+        "description": "",
+        "type": "r"
     },
     {
         "filename": "house2.jpg",
-        "description": ""
+        "description": "",
+        "type": "r"
     },
     {
         "filename": "house3.jpg",
-        "description": ""
+        "description": "",
+        "type": "r"
     },
     {
         "filename": "house4.jpg",
-        "description": ""
+        "description": "",
+        "type": "r"
     },
     {
         "filename": "house5.jpg",
-        "description": ""
+        "description": "",
+        "type": "r"
     },
     {
         "filename": "building1.jpg",
-        "description": ""
+        "description": "",
+        "type": "c"
     },
     {
         "filename": "building2.jpg",
-        "description": ""
+        "description": "",
+        "type": "c"
     },
     {
         "filename": "building3.jpg",
-        "description": ""
+        "description": "",
+        "type": "c"
     },
     {
         "filename": "building4.jpg",
-        "description": ""
+        "description": "",
+        "type": "c"
     },
     {
         "filename": "building5.jpg",
-        "description": ""
+        "description": "",
+        "type": "c"
     },
     {
         "filename": "building6.jpg",
-        "description": ""
+        "description": "",
+        "type": "c"
     },
     {
         "filename": "building7.jpg",
-        "description": ""
+        "description": "",
+        "type": "c"
     },
     {
         "filename": "building8.jpg",
-        "description": ""
+        "description": "",
+        "type": "c"
     },
     {
         "filename": "port1.jpg",
-        "description": ""
+        "description": "",
+        "type": "i"
     },
     {
         "filename": "port2.jpg",
-        "description": ""
+        "description": "",
+        "type": "i"
     },
     {
         "filename": "port3.jpg",
-        "description": ""
+        "description": "",
+        "type": "i"
     },
     {
         "filename": "port4.jpg",
-        "description": ""
+        "description": "",
+        "type": "i"
     }
 ]
