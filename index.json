@@ -65,30 +65,11 @@
         "type": "c"
     },
     {
-        "filename": "building2.jpg",
-        "description": "",
-        "type": "c"
-    },
-    {
-        "filename": "building3.jpg",
-        "description": "",
-        "type": "c"
-    },
-    {
         "filename": "building4.jpg",
         "description": "",
         "type": "c"
     },
-    {
-        "filename": "building5.jpg",
-        "description": "",
-        "type": "c"
-    },
-    {
-        "filename": "building6.jpg",
-        "description": "",
-        "type": "c"
-    },
+  
     {
         "filename": "building7.jpg",
         "description": "",
@@ -98,25 +79,5 @@
         "filename": "building8.jpg",
         "description": "",
         "type": "c"
-    },
-    {
-        "filename": "port1.jpg",
-        "description": "",
-        "type": "i"
-    },
-    {
-        "filename": "port2.jpg",
-        "description": "",
-        "type": "i"
-    },
-    {
-        "filename": "port3.jpg",
-        "description": "",
-        "type": "i"
-    },
-    {
-        "filename": "port4.jpg",
-        "description": "",
-        "type": "i"
     }
 ]
